@@ -1,7 +1,21 @@
 $font-stack: 'Raleway';
 $bg-color: white;
+$link-color: grey;
+$link-hover-color: black;
 
 body {
     font: 100% $font-stack;
     background: $bg-color;
 }
+
+.navmenu {  
+    a {
+      color: $link-color;
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $link-hover-color;
+    }
+  }

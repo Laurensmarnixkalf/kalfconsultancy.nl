@@ -1,3 +1,12 @@
 body {
   font: 100% "Raleway";
   background: white; }
+
+.navmenu a {
+  color: grey;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+.navmenu a:hover {
+  color: black; }
