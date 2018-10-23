@@ -34,6 +34,7 @@ Remember: `Control + C` will end browsersync running in terminal.
 
 ### Contents of the gulpfile.js 
 
+```
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
@@ -65,3 +66,4 @@ gulp.task('serve', ['sass'], function() {
 });
 
 gulp.task('default', ['js','serve']);
+```
