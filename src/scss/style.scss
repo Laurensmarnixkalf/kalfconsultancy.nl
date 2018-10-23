@@ -1,5 +1,7 @@
-$bg-color: blue;
+$font-stack: 'Raleway';
+$bg-color: white;
 
 body {
+    font: 100% $font-stack;
     background: $bg-color;
 }
