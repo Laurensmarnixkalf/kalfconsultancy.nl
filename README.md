@@ -8,3 +8,5 @@ Also command `gulp` (from terminal) fires up browsersync to localhost:300
 
 Remember: `Control + C` will end browsersync running in terminal.
 
+## Setup
+
