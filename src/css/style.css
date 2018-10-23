@@ -2,11 +2,15 @@ body {
   font: 100% "Raleway";
   background: white; }
 
-.navmenu a {
+a {
   color: grey;
   display: block;
   padding: 6px 12px;
   text-decoration: none; }
 
-.navmenu a:hover {
-  color: black; }
+a:hover {
+  color: black;
+  text-decoration: none; }
+
+.lead {
+  padding: 40px 0px 40px 60px; }

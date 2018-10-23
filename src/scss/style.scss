@@ -8,14 +8,19 @@ body {
     background: $bg-color;
 }
 
-.navmenu {  
-    a {
-      color: $link-color;
-      display: block;
-      padding: 6px 12px;
-      text-decoration: none;
-    }
-    a:hover {
-      color: $link-hover-color;
-    }
-  }
+a {
+    color: $link-color;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+}
+
+
+.lead {
+    padding: 40px 0px 40px 60px;
+}
