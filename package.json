@@ -1,0 +1,29 @@
+{
+  "name": "kalfconsultancy.nl",
+  "version": "1.0.0",
+  "description": "Website about a minimalistic approach to Product management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laurensmarnixkalf/kalfconsultancy.nl.git"
+  },
+  "author": "L.M. Kalf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laurensmarnixkalf/kalfconsultancy.nl/issues"
+  },
+  "homepage": "https://github.com/Laurensmarnixkalf/kalfconsultancy.nl#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
