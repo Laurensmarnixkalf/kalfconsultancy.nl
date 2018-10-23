@@ -26,6 +26,7 @@ Remember: `Control + C` will end browsersync running in terminal.
 - Popper not installed: `npm install popper.js --save` 
 - gulpfile.js node_modules/popper.js/dist/umd/popper.min.js not from node_modules/popper.js/dist/popper.min.js as this gives the unexpected token error in chrome.
 - Gulp not working: 
+
 `npm install -g minimatch (Enter)`
 
 `npm install -g graceful-fs (Enter)`
