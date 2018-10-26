@@ -1,5 +1,5 @@
-body {
-  font: 100% "Raleway";
+body, html {
+  font: 100% "Montserrat", sans-serif;
   background: white; }
 
 a {
@@ -13,4 +13,20 @@ a:hover {
   text-decoration: none; }
 
 .lead {
-  padding: 40px 0px 40px 60px; }
+  padding: 40px 0px 40px 0px; }
+
+.custom-toggler.navbar-toggler {
+  border-style: none; }
+
+.minimal-image img {
+  max-width: 350px; }
+
+.article p {
+  margin: 30px; }
+
+.article ul {
+  margin: 30px; }
+
+@media screen and (min-width: 768px) {
+  .laurens {
+    background-color: red; } }

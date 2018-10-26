@@ -1,9 +1,10 @@
-$font-stack: 'Raleway';
+$font-stack: 'Montserrat', sans-serif;
 $bg-color: white;
 $link-color: grey;
 $link-hover-color: black;
+$break-largescreen: 768px;
 
-body {
+body, html {
     font: 100% $font-stack;
     background: $bg-color;
 }
@@ -20,7 +21,29 @@ a:hover {
     text-decoration: none;
 }
 
-
 .lead {
-    padding: 40px 0px 40px 60px;
+    padding: 40px 0px 40px 0px;
 }
+
+.custom-toggler.navbar-toggler {
+    border-style: none;
+} 
+
+.minimal-image img {
+    max-width: 350px;
+}
+
+.article {
+    p {
+        margin: 30px;
+    }
+    ul {
+        margin: 30px;
+    }
+} 
+
+.laurens {
+    @media screen and (min-width: $break-largescreen) {
+      background-color: red;
+    }
+  }
