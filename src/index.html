@@ -1,76 +1,132 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <title>Kalfconsultancy</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+<head>
+    <title>Kalfconsultancy</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-        <!-- Main menu -->
-        <div class="pos-f-t navmenu">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-light">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                                <a href="http://www.kalfconsultancy.nl/"><h5 class="text-dark h4">Kalfconsultancy.nl</h5></a>
-                                <br>
-                                <span class="text-muted font-italic">Minimalistic product management</span>
-                                <br>
-                                <br>
-                                <p>Introduction</p>
-                                <a href="#">What is product management?</a>
-                                <a href="#">A minimalistic approach</a>
-                                <br>
-                                <p>The Product Process</p>
-                                <a href="the-product-commandments.html">The Product commandments</a>
-                                <a href="#">A customer council</a>
-                                <a href="#">The Product Opportunity Assessment</a>
-                                <a href="#">Focus on the User Experience</a>
-                                <a href="#">Personas</a>
-                                <a href="#">The Product Discovery</a>
-                                <a href="#">The high fidelity prototype</a>
-                                <a href="#">User testing</a>
-                                <a href="#">Measure to improve</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Font Awesome JS -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.kalfconsultancy.nl/">
+                    <h5>Kalfconsultancy.nl</h5>
+                </a>
             </div>
-        </div> <!-- End of menu -->
+            <ul class="list-unstyled components" id="mainMenu">
+                <p><span class="font-italic">Minimalistic product management</span></p>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#introductionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Introduction</a>
+                    <ul class="collapse list-unstyled" id="introductionSubmenu"></ul>
+                </li>
+                <li>
+                    <a href="#processSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">The Product Process</a>
+                    <ul class="collapse list-unstyled" id="processSubMenu"></ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content -->
+        <div id="content">
             <nav class="navbar navbar-light">
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
+                <div class="container-fluid">
 
-        <!-- Main content container -->
-        <div class="container">
-            <!-- The contents -->
-                    <p class="lead">
-                        <mark>Minimalistic</mark> Product management from a <mark>human Psychology</mark> perspective.
-                    </p>
-                    <div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading">Welcome!</h4>
-                            <p>In the modern world it’s a really important skill to be able to differentiate ‘signal’ from ‘noise’.
-                                    The majority of the things that we do on a daily basis, do not move the needle forward, they do not make our boat go faster. 
-                                    The minimalistic approach to product management is about limiting the time and resources you spent on ‘maintenance tasks’ and maximizing the time and resources you spent on adding value.</p>
-                            <hr>
-                            <p class="mb-0">Please use the button in the top left corner to navigate, enjoy!</p>
-                          </div>
+                    <button class="navbar-toggler custom-toggler" type="button" id="sidebarCollapse" class="btn btn-info">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="container">
+                    <h1 class="">Welcome!</h1>
+                    <p>In the modern world it’s a really important skill to be able to differentiate ‘signal’ from
+                        ‘noise’.
+                        The majority of the things that we do on a daily basis, do not move the needle forward, they do
+                        not make our boat go faster.
+                        The minimalistic approach to product management is about limiting the time and resources you
+                        spent on ‘maintenance tasks’ and maximizing the time and resources you spent on adding value.</p>
+                    <hr>
+                    <p class="mb-0"><mark>Minimalistic</mark> Product management from a <mark>human Psychology</mark> perspective.</p>
+            </div>
         </div>
-            
-               
-            
-        </div> <!-- End of Main content container-->
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/tether.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-    </body>
+    </div><!-- End of main wrapper -->
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+        // Code to populate the navbar menu
+        var introSubMenu = document.getElementById('introductionSubmenu');
+        var proSubMenu = document.getElementById('processSubMenu');
+
+        var menuItemsIntro = [
+            titles = ['What is product management?','A minimalistic approach'],
+            links = ['http://www.nu.nl', 'http://www.nos.nl']
+        ];
+        
+        // Navbar contents
+        var menuItemsProcess = [
+            titles = ['The Product commandments', 'A customer council', 'The Product Opportunity Assessment','Focus on the User Experience', 'Personas', 'Product Discovery', 'The High Fidelity Prototype', 'User Testing', 'Measure to improve'],
+            links = ['the-product-commandments.html', 'a-customer-council.html', 'the-product-opportunity-assessment.html', 'focus-on-the-user-experience.html', 'personas.html', 'product-discovery.html', 'the-high-fidelity-prototype.html', 'user-testing.html', 'measure-to-improve.html']
+        ];
+
+        function makeList(list, arrayTitles, arrayLinks) {
+
+                for (var i = 0; i < arrayTitles.length; i++) {
+                    // Create the list item:
+                    var item = document.createElement('li');
+                    // Create the a item:
+                    var itemA = document.createElement('a');
+                    // Connect a to li
+                    item.appendChild(itemA);
+                    // Set its contents:
+                    itemA.appendChild(document.createTextNode(arrayTitles[i]));
+                    // Set the link
+                    itemA.setAttribute("href", arrayLinks[i]);
+                    // Add it to the list:
+                    list.appendChild(item);
+                }
+            }
+
+        // Add the contents
+        makeList(proSubMenu, menuItemsProcess[0], menuItemsProcess[1]);
+        makeList(introSubMenu, menuItemsIntro[0], menuItemsIntro[1]);
+
+        // Toggle showing the navbar
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+
+
+    </script>
+
+</body>
+
 </html>

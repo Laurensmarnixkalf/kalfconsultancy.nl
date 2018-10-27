@@ -1,86 +1,154 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <title>Kalfconsultancy</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+<head>
+    <title>Kalfconsultancy</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-        <!-- Main menu -->
-        <div class="pos-f-t navmenu">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-light">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm p-4">
-                                <a href="http://www.kalfconsultancy.nl/"><h5 class="text-dark h4">Kalfconsultancy.nl</h5></a>
-                                <span class="text-muted font-italic">Minimalistic product management</span>
-                            </div>
-                            <div class="col-sm p-4">
-                                <p>Introduction</p>
-                                <a href="#">What is product management?</a>
-                                <a href="#">A minimalistic approach</a>
-                            </div>
-                            <div class="col-sm p-4">
-                                <p>The Product Process</p>
-                                <a href="the-product-commandments.html">The Product commandments</a>
-                                <a href="#">A customer council</a>
-                                <a href="#">The Product Opportunity Assessment</a>
-                                <a href="#">Focus on the User Experience</a>
-                                <a href="#">Personas</a>
-                                <a href="#">The Product Discovery</a>
-                                <a href="#">The high fidelity prototype</a>
-                                <a href="#">User testing</a>
-                                <a href="#">Measure to improve</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.kalfconsultancy.nl/">
+                    <h5>Kalfconsultancy.nl</h5>
+                </a>
             </div>
+            <ul class="list-unstyled components" id="mainMenu">
+                <p><span class="font-italic">Minimalistic product management</span></p>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#introductionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Introduction</a>
+                    <ul class="collapse list-unstyled" id="introductionSubmenu"></ul>
+                </li>
+                <li>
+                    <a href="#processSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">The Product Process</a>
+                    <ul class="collapse list-unstyled" id="processSubMenu"></ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+       <!-- Main content -->
+        <div id="content">
             <nav class="navbar navbar-light">
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-        </div> <!-- End of menu -->
+                <div class="container-fluid">
 
-        <!-- Main content container -->
+                    <button class="navbar-toggler custom-toggler" type="button" id="sidebarCollapse" class="btn btn-info">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
         <div class="container article">
             <h1>The Product commandments</h1>
-            <p>Having a set of rules, principles or commandments can really help to determine the right trade-offs and priorities
+            <p>Having a set of rules, principles or commandments can really help to determine the right trade-offs and
+                priorities
                 within your product or service.</p>
             <blockquote class="blockquote">
                 <p class="mb-0">“The product commandments are a public declaration of your beliefs and intentions.”</p>
             </blockquote>
-               
+
             <p>There will be many instances when tough decisions have to be made. Having a good set of product commandments can
                 really help to speed up the process of product discovery.
-                Keep in mind that product commandments is not a list of product requirements, it’s of a higher strategic order. The
+                Keep in mind that product commandments is not a list of product requirements, it’s of a higher strategic order.
+                The
                 commandments help to make important decisions down the road about product requirements.
-                It’s not enough to only list your product commandments, you have to make it a prioritized list. Try to formulate
+                It’s not enough to only list your product commandments, you have to make it a prioritized list. Try to
+                formulate
                 your commandments as useful as possible. This means: not too generic.
-            
+
                 The commandments will help when tough discussions are preventing the team from moving forward. In those
                 discussions, you as a product manager, can help by asking the following questions:</p>
             <ul>
-                <li>What problem exactly are you trying to solve?</li>
-                <li>Who exactly are you trying to solve this problem for - which persona?</li>
-                <li>What are the goals you are trying to satisfy with this product?</li>
-                <li>What is the relative priority of each goal? (How do they relate to the product commandments?)</li>
+                    <li><p>What <mark>problem</mark> exactly are you trying to solve?</p></li>
+                    <li><p>Who exactly are you trying to solve this problem for - which persona?</p></li>
+                    <li><p>What are the <mark>goals</mark> you are trying to satisfy with this product?</p></li>
+                    <li><p>What is the relative <mark>priority</mark> of each goal? (How do they relate to the product commandments?)</p></li>
             </ul>
-            <p>It’s really important to take prioritization seriously. Make it as transparent as possible. Get the team to agree on
-                a specific ordering before moving on. If you skip this step you won’t have a common basis (the set of commandments)
+            <hr>
+            <p>It’s really important to take prioritization seriously. Make it as transparent as possible. Get the team to
+                agree on
+                a specific ordering before moving on. If you skip this step you won’t have a common basis (the set of
+                commandments)
                 to fall back on for evaluation of the different opinions and arguments.</p>
-            
-        </div> <!-- End of Main content container-->
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/tether.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-    </body>
+
+        </div> 
+    </div><!-- End of main wrapper -->
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+        // Code to populate the navbar menu
+        var introSubMenu = document.getElementById('introductionSubmenu');
+        var proSubMenu = document.getElementById('processSubMenu');
+
+        var menuItemsIntro = [
+            titles = ['What is product management?','A minimalistic approach'],
+            links = ['http://www.nu.nl', 'http://www.nos.nl']
+        ];
+        
+        // Navbar contents
+        var menuItemsProcess = [
+            titles = ['The Product commandments', 'A customer council', 'The Product Opportunity Assessment','Focus on the User Experience', 'Personas', 'Product Discovery', 'The High Fidelity Prototype', 'User Testing', 'Measure to improve'],
+            links = ['the-product-commandments.html', 'a-customer-council.html', 'the-product-opportunity-assessment.html', 'focus-on-the-user-experience.html', 'personas.html', 'product-discovery.html', 'the-high-fidelity-prototype.html', 'user-testing.html', 'measure-to-improve.html']
+        ];
+
+        function makeList(list, arrayTitles, arrayLinks) {
+
+                for (var i = 0; i < arrayTitles.length; i++) {
+                    // Create the list item:
+                    var item = document.createElement('li');
+                    // Create the a item:
+                    var itemA = document.createElement('a');
+                    // Connect a to li
+                    item.appendChild(itemA);
+                    // Set its contents:
+                    itemA.appendChild(document.createTextNode(arrayTitles[i]));
+                    // Set the link
+                    itemA.setAttribute("href", arrayLinks[i]);
+                    // Add it to the list:
+                    list.appendChild(item);
+                }
+            }
+
+        // Add the contents
+        makeList(proSubMenu, menuItemsProcess[0], menuItemsProcess[1]);
+        makeList(introSubMenu, menuItemsIntro[0], menuItemsIntro[1]);
+
+        // Toggle showing the navbar
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+
+
+    </script>
+
+</body>
+
 </html>
