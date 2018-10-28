@@ -2,21 +2,6 @@ body, html {
   font: 100% "Montserrat", sans-serif;
   background: white; }
 
-.lead {
-  padding: 40px 0px 40px 0px; }
-
-.custom-toggler.navbar-toggler {
-  border-style: none; }
-
-.minimal-image img {
-  max-width: 350px; }
-
-.article p {
-  margin: 30px; }
-
-.article ul {
-  margin: 30px; }
-
 p {
   font-size: 1.1em;
   font-weight: 300;
@@ -27,22 +12,63 @@ a, a:hover, a:focus {
   text-decoration: none;
   transition: all 0.3s; }
 
+.lead {
+  padding: 40px 0px 40px 0px; }
+
+.custom-toggler.navbar-toggler {
+  border-style: none; }
+
+.page-content-wrapper {
+  width: 100%; }
+
+#content {
+  padding: 15px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto; }
+
+.article h1 {
+  text-align: center; }
+
+.article p {
+  margin: 10px; }
+
+.article ul {
+  margin: 30px; }
+
+.article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; }
+
 #sidebar {
   /* don't forget to add all the previously mentioned styles here too */
-  background: #2d3436;
-  color: #fff;
-  transition: all 0.3s; }
+  background: white;
+  color: #636e72;
+  transition: all 0.3s;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.center-text {
+  text-align: center; }
+
+#sidebar:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #2d3436; }
+  background: white; }
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #2d3436; }
+  border-bottom: none; }
 
 #sidebar ul p {
-  color: #fff;
+  color: #636e72;
   padding: 10px; }
 
 #sidebar ul li a {
@@ -55,26 +81,21 @@ a, a:hover, a:focus {
   background: #fff; }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-  color: #fcf8e3;
-  background: #636e72; }
+  color: black;
+  background: white; }
 
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #b2bec3; }
+  background: white; }
 
 .wrapper {
   display: flex;
   width: 100%;
   align-items: stretch; }
 
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  min-height: 100vh; }
-
 #sidebar.active {
-  margin-left: -250px; }
+  margin-left: -255px; }
 
 a[data-toggle="collapse"] {
   position: relative; }
@@ -88,6 +109,8 @@ a[data-toggle="collapse"] {
 
 @media (max-width: 768px) {
   #sidebar {
-    margin-left: -250px; }
+    margin-left: -255px; }
   #sidebar.active {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .article img {
+    width: 60%; } }
