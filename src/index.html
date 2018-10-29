@@ -11,11 +11,6 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
 
-    <!-- Font Awesome JS -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -37,12 +32,19 @@
                     <ul class="collapse list-unstyled" id="introductionSubmenu"></ul>
                 </li>
                 <li>
+                    <a href="#storiesSubMenu" data-toggle="collapse" aria-expanded="false">Stories</a>
+                    <ul class="collapse list-unstyled" id="storiesSubMenu"></ul>
+                </li>
+                <li>
                     <a href="#processSubMenu" data-toggle="collapse" aria-expanded="false">The Product Process</a>
                     <ul class="collapse list-unstyled" id="processSubMenu"></ul>
                 </li>
                 <li>
                     <a href="#mappingSubMenu" data-toggle="collapse" aria-expanded="false">Story Mapping</a>
                     <ul class="collapse list-unstyled" id="mappingSubMenu"></ul>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
                 </li>
                 <li>
                     <a href="#">Portfolio</a>
@@ -60,71 +62,35 @@
                     </button>
             </nav>
                     <h1 class="">Welcome!</h1>
+                    <h6 class="">Product management</h6>
+                    <p>Because it is awesome to create value, to solve problems and to build a solution to those problems. 
+                        Something that changes people’s lives, makes people, happy, and something that lasts.
+                        That's what I like about product management.
+                    <br>It's easy to forget what you've learned to solve a certain problem or to just take it for granted. 
+                        For that reason, I want an outlet for the things I've learned in product management. This is that place.
+                    </p>
+                    <h6 class="">Differentiating 'signal' from 'noise'</h6>
                     <p>In the modern world it’s a really important skill to be able to differentiate ‘signal’ from
                         ‘noise’.
                         The majority of the things that we do on a daily basis, do not move the needle forward, they do
                         not make our boat go faster.
                         The minimalistic approach to product management is about limiting the time and resources you
-                        spent on ‘maintenance tasks’ and maximizing the time and resources you spent on adding value.</p>
+                        spent on things that don't add value (e.g. maintenance tasks) and maximizing the time and resources you spent on adding value.</p>
+                    <h6>In the end it's all about humans and emotion</h6>
+                    <p>I have a background in Psychology, maybe not the first education path you think of when you consider product management.
+                        But it's definitely not a bad place to start from. Studying human behaviour, emotions, how the mind works, group dynamics and 
+                        'how to do' a proper (clinical) assessment, all comes in handy when you want to solve problems for people through a product.</p>
                     <hr>
+                    <h6>TL;DR</h6>
                     <p class="mb-0"><mark>Minimalistic</mark> Product management from a <mark>human Psychology</mark> perspective.</p>
         </div>
     </div><!-- End of main wrapper -->
 
     <script src="/js/jquery.min.js"></script>
-    <script src="/js/tether.min.js"></script>
+    <!-- <script src="/js/tether.min.js"></script> -->
     <script src="/js/bootstrap.min.js"></script>
-
-
-    <script type="text/javascript">
-        // Code to populate the navbar menu
-        var introSubMenu = document.getElementById('introductionSubmenu');
-        var proSubMenu = document.getElementById('processSubMenu');
-
-        var menuItemsIntro = [
-            titles = ['What is product management?','A minimalistic approach'],
-            links = ['http://www.nu.nl', 'http://www.nos.nl']
-        ];
-        
-        // Navbar contents
-        var menuItemsProcess = [
-            titles = ['The Product commandments', 'A customer council', 'The Product Opportunity Assessment','Focus on the User Experience', 'Personas', 'Product Discovery', 'The High Fidelity Prototype', 'User Testing', 'Measure to improve'],
-            links = ['the-product-commandments.html', 'a-customer-council.html', 'the-product-opportunity-assessment.html', 'focus-on-the-user-experience.html', 'personas.html', 'product-discovery.html', 'the-high-fidelity-prototype.html', 'user-testing.html', 'measure-to-improve.html']
-        ];
-
-        function makeList(list, arrayTitles, arrayLinks) {
-
-                for (var i = 0; i < arrayTitles.length; i++) {
-                    // Create the list item:
-                    var item = document.createElement('li');
-                    // Create the a item:
-                    var itemA = document.createElement('a');
-                    // Connect a to li
-                    item.appendChild(itemA);
-                    // Set its contents:
-                    itemA.appendChild(document.createTextNode(arrayTitles[i]));
-                    // Set the link
-                    itemA.setAttribute("href", arrayLinks[i]);
-                    // Add it to the list:
-                    list.appendChild(item);
-                }
-            }
-
-        // Add the contents
-        makeList(proSubMenu, menuItemsProcess[0], menuItemsProcess[1]);
-        makeList(introSubMenu, menuItemsIntro[0], menuItemsIntro[1]);
-
-        // Toggle showing the navbar
-        $(document).ready(function () {
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-
-        });
-
-
-    </script>
+    <script src="/js/menu-items.js"></script>
+    <script src="/js/main.js"></script>
 
 </body>
 

@@ -21,37 +21,45 @@
 <body>
     <div class="wrapper">
         <!-- Sidebar -->
+        <!-- Sidebar -->
         <nav id="sidebar" class="center-text">
-            <div class="sidebar-header">
-                <a href="http://www.kalfconsultancy.nl/">
-                    <h5>Kalfconsultancy.nl</h5>
-                </a>
-            </div>
-            <ul class="list-unstyled components" id="mainMenu">
-                <p><span class="font-italic">Minimalistic product management</span></p>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#introductionSubmenu" data-toggle="collapse" aria-expanded="false">Introduction</a>
-                    <ul class="collapse list-unstyled" id="introductionSubmenu"></ul>
-                </li>
-                <li>
-                    <a href="#processSubMenu" data-toggle="collapse" aria-expanded="false">The Product Process</a>
-                    <ul class="collapse list-unstyled" id="processSubMenu"></ul>
-                </li>
-                <li>
-                    <a href="#mappingSubMenu" data-toggle="collapse" aria-expanded="false">Story Mapping</a>
-                    <ul class="collapse list-unstyled" id="mappingSubMenu"></ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+                <div class="sidebar-header">
+                    <a href="http://www.kalfconsultancy.nl/">
+                        <h5>Kalfconsultancy.nl</h5>
+                    </a>
+                </div>
+                <ul class="list-unstyled components" id="mainMenu">
+                    <p><span class="font-italic">Minimalistic product management</span></p>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#introductionSubmenu" data-toggle="collapse" aria-expanded="false">Introduction</a>
+                        <ul class="collapse list-unstyled" id="introductionSubmenu"></ul>
+                    </li>
+                    <li>
+                        <a href="#storiesSubMenu" data-toggle="collapse" aria-expanded="false">Stories</a>
+                        <ul class="collapse list-unstyled" id="storiesSubMenu"></ul>
+                    </li>
+                    <li>
+                        <a href="#processSubMenu" data-toggle="collapse" aria-expanded="false">The Product Process</a>
+                        <ul class="collapse list-unstyled" id="processSubMenu"></ul>
+                    </li>
+                    <li>
+                        <a href="#mappingSubMenu" data-toggle="collapse" aria-expanded="false">Story Mapping</a>
+                        <ul class="collapse list-unstyled" id="mappingSubMenu"></ul>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
        <!-- Main content -->
                 
             <div id="content" class="article">   
@@ -67,7 +75,7 @@
                     <blockquote class="blockquote">
                         <p class="mb-0">“The product commandments are a public declaration of your beliefs and intentions.”</p>
                     </blockquote>
-
+                    <h6 class="">Make difficult decisions a bit easier</h6>
                     <p>There will be many instances when tough decisions have to be made. Having a good set of product commandments can
                         really help to speed up the process of product discovery.
                         Keep in mind that product commandments is not a list of product requirements, it’s of a higher strategic order.
@@ -76,7 +84,7 @@
                         It’s not enough to only list your product commandments, you have to make it a prioritized list. 
                     </p>
                     <img src='assets/commandments.jpg' style="max-width: 250px;">
-
+                    <h6 class="">Be specific</h6>
                     <p>
                         Try to formulate
                         your commandments as useful as possible. This means: not too generic.
@@ -90,6 +98,7 @@
                             <li><p>What is the relative <mark>priority</mark> of each goal? (How do they relate to the product commandments?)</p></li>
                     </ul>
                     <hr>
+                    <h6 class="">TL;DR</h6>
                     <p>It’s really important to take prioritization seriously. Make it as transparent as possible. Get the team to
                         agree on
                         a specific ordering before moving on. If you skip this step you won’t have a common basis (the set of
@@ -99,59 +108,11 @@
     </div> 
 
     <script src="/js/jquery.min.js"></script>
-    <script src="/js/tether.min.js"></script>
+    <!-- <script src="/js/tether.min.js"></script> -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/menu-items.js"></script>
+    <script src="/js/main.js"></script>
 
-
-    <script type="text/javascript">
-        // Code to populate the navbar menu
-        var introSubMenu = document.getElementById('introductionSubmenu');
-        var proSubMenu = document.getElementById('processSubMenu');
-
-        var menuItemsIntro = [
-            titles = ['What is product management?','A minimalistic approach'],
-            links = ['http://www.nu.nl', 'http://www.nos.nl']
-        ];
-        
-        // Navbar contents
-        var menuItemsProcess = [
-            titles = ['The Product commandments', 'A customer council', 'The Product Opportunity Assessment','Focus on the User Experience', 'Personas', 'Product Discovery', 'The High Fidelity Prototype', 'User Testing', 'Measure to improve'],
-            links = ['the-product-commandments.html', 'a-customer-council.html', 'the-product-opportunity-assessment.html', 'focus-on-the-user-experience.html', 'personas.html', 'product-discovery.html', 'the-high-fidelity-prototype.html', 'user-testing.html', 'measure-to-improve.html']
-        ];
-
-        function makeList(list, arrayTitles, arrayLinks) {
-
-                for (var i = 0; i < arrayTitles.length; i++) {
-                    // Create the list item:
-                    var item = document.createElement('li');
-                    // Create the a item:
-                    var itemA = document.createElement('a');
-                    // Connect a to li
-                    item.appendChild(itemA);
-                    // Set its contents:
-                    itemA.appendChild(document.createTextNode(arrayTitles[i]));
-                    // Set the link
-                    itemA.setAttribute("href", arrayLinks[i]);
-                    // Add it to the list:
-                    list.appendChild(item);
-                }
-            }
-
-        // Add the contents
-        makeList(proSubMenu, menuItemsProcess[0], menuItemsProcess[1]);
-        makeList(introSubMenu, menuItemsIntro[0], menuItemsIntro[1]);
-
-        // Toggle showing the navbar
-        $(document).ready(function () {
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-
-        });
-
-
-    </script>
 
 </body>
 
