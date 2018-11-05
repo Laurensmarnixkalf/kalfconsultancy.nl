@@ -2,14 +2,14 @@
 
  // Navbar contents 'Introduction'
  var menuItemsIntro = [
-    titles = ['What is product management?','A minimalistic approach'],
-    links = ['http://www.nu.nl', 'http://www.nos.nl']
+    titles = ['A minimalistic approach'],
+    links = ['a-minimalistic-approach.html']
 ];
 
 // Navbar contents 'Stories'
 var menuItemsStories = [
-    titles = ['Link title'], 
-    links = ['link-address.html']
+    titles = ['Stories coming soon'], 
+    links = ['work-in-progress.html']
 ];
 
 // Navbar contents 'The Product Process'
@@ -20,6 +20,6 @@ var menuItemsProcess = [
 
 // Navbar contents 'Story mapping'
 var menuItemsStoryMapping = [
-    titles = ['Link title'], 
-    links = ['link-address.html']
+    titles = ['overview'], 
+    links = ['story-mapping.html']
 ];
