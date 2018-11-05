@@ -20,6 +20,6 @@ var menuItemsProcess = [
 
 // Navbar contents 'Story mapping'
 var menuItemsStoryMapping = [
-    titles = ['overview'], 
+    titles = ['Overview'], 
     links = ['story-mapping.html']
 ];
