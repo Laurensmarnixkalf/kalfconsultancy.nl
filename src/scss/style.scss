@@ -39,15 +39,38 @@ a, a:hover, a:focus {
     width: 100%;
 }
 
+// Navbar on top
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar-toggler {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-toggler {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 // Content area for all pages
 #content {
-    padding: 15px;
+    padding-top: 50px;
     width: 70%;
     height: 100%;
     margin:0 auto;
 }
 
 .article {
+        padding-top: 70px;
     p {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -68,6 +91,7 @@ a, a:hover, a:focus {
 
 // All sidebar related
 #sidebar {
+    position: relative;
     background: $bg-color;
     color: $darker-color;
     text-align: center;
@@ -185,10 +209,13 @@ a[data-toggle="collapse"] {
 }
 
 // Big screens
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
     #content {
         width: 60%;
         height: 100%;
         margin:0 auto;
+    }
+    .navbar {
+        display: none;
     }
 }
