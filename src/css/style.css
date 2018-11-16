@@ -189,4 +189,8 @@ ul ul a {
   #content.active {
     width: calc(100% - 250px); }
   #sidebarCollapse span {
-    display: none; } }
+    display: none; }
+  .display-4 {
+    font-size: 2rem; }
+  h1 {
+    font-size: 1.5rem; } }
