@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
 
 <head>
     <title>Kalfconsultancy</title>
@@ -8,30 +8,31 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
-
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <div class="wrapper">
-        <!-- Sidebar -->
-        <!-- Sidebar -->
-        <nav id="sidebar" class="center-text">
-                <div class="sidebar-header">
-                    <a href="http://www.kalfconsultancy.nl/">
-                        <img src='assets/logo-kc-m.jpg'>
-                        <h5>Kalfconsultancy.nl</h5>
-                    </a>
-                </div>
-                <ul class="list-unstyled components" id="mainMenu">
-                    <p><span class="font-italic">Minimalistic product management</span></p>
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.kalfconsultancy.nl/">
+                    <img src='assets/logo-kc-m.jpg'>
+                    <h5>Kalfconsultancy.nl</h5>
+                </a>
+            </div>
+
+            <ul class="list-unstyled components" id="mainMenu">
                     <li>
                         <a href="about.html">About</a>
                     </li>
@@ -61,54 +62,133 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
-            </nav>
-       <!-- Main content -->
-                
-            <div id="content" class="article">   
-                            <nav class="navbar navbar-light">
-                        <button class="navbar-toggler custom-toggler" type="button" id="sidebarCollapse" class="btn btn-info">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </nav>
-                    <h1>User testing</h1>
-                    <p>The key is to prove to yourself and the rest of the product team, that the spec you give them describes a winning
-                        product. Validate your ideas before building it. Performing user tests with real target users is the best way to
-                        reduce any doubts to as close to zero as possible. </p>
-                    <img src='assets/user-testing.jpg'>
-                    <h6 class="">The process</h6>
-                    <p>Here's a short description of how to handle a user test:
-                    </p>
-                    <ul>
-                        <li><p>Define <mark>the set of tasks</mark> you want to test in advance.</p></li>
-                        <li>
-                            <p>Take the opportunity to learn how your user thinks about the problem <mark>today</mark>. (you will not get a
-                                second chance, because then their thoughts will be contaminated with your prototype and ideas)</p>
-                        </li>
-                        <li><p>Ask the user before the task starts <mark>"What do you think this does?"</mark></p></li>
-                        <li><p>Go through the tasks.</p></li>
-                        <li><p>Ask your favorite question: "How likely is it that you would <mark>recommend</mark> this to your friends?"</p></li>
-                        <li>
-                            <p>How much are you willing to pay for this product/service? (Ask this question anyway, even if you consider
-                                offering it as a 'free' service, it will give you a nice reference across multiple uer tests).</p>
-                        </li>
-                    </ul>
-                    <blockquote class="blockquote">
-                            <p class="mb-0">Tip: It really helps to have 1 person administer the tests, and let one person take notes. Taking your desinger or an engineer along can be really interesting.</p>
-                    </blockquote>
-                    <hr>
-                    <h6 class="">TL;DR</h6>
-                    <p>In user testing there are some definite do's and don'ts. Make sure to listen more and say less :)</p>
+        </nav>
+
+        <!-- Top Nav bar  -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-light">
+                    <i class="fas fa-align-left"></i>
+                    <span>Menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://www.linkedin.com/in/laurenskalf/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://nl.pinterest.com/laurensmarnix/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+        <!-- Page content -->
+        <div id="content">
+            <div class="article-content">
+                <div class="article-container">
+                    <div class="col-md-12">
+                        <div class="float-right">
+                            <img src='assets/user-testing.jpg'>
+                        </div>
+                        <div>
+                            <h1>User testing</h1>
+                            <p>The key is to prove to yourself and the rest of the product team, that the spec you give them describes a winning
+                                product. Validate your ideas before building it. Performing user tests with real target users is the best way to
+                                reduce any doubts to as close to zero as possible. </p>
+                            <h6 class="">The process</h6>
+                            <p>Here's a short description of how to handle a user test:
+                            </p>
+                            <ul>
+                                <li><p>Define <mark>the set of tasks</mark> you want to test in advance.</p></li>
+                                <li>
+                                    <p>Take the opportunity to learn how your user thinks about the problem <mark>today</mark>. (you will not get a
+                                        second chance, because then their thoughts will be contaminated with your prototype and ideas)</p>
+                                </li>
+                                <li><p>Ask the user before the task starts <mark>"What do you think this does?"</mark></p></li>
+                                <li><p>Go through the tasks.</p></li>
+                                <li><p>Ask your favorite question: "How likely is it that you would <mark>recommend</mark> this to your friends?"</p></li>
+                                <li>
+                                    <p>How much are you willing to pay for this product/service? (Ask this question anyway, even if you consider
+                                        offering it as a 'free' service, it will give you a nice reference across multiple uer tests).</p>
+                                </li>
+                            </ul>
+                            <blockquote class="blockquote">
+                                    <p class="mb-0">Tip: It really helps to have 1 person administer the tests, and let one person take notes. Taking your desinger or an engineer along can be really interesting.</p>
+                            </blockquote>
+                            <hr>
+                            <h6 class="">TL;DR</h6>
+                            <p>In user testing there are some definite do's and don'ts. Make sure to listen more and say less :)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small">
+                <!-- Footer Links -->
+                <div class="container">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                        <!-- Grid column -->
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="about.html">About</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="resources.html">Resources</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="contact.html">Contact</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                    <hr class="rgba-white-light" style="margin: 0 15%;">
+                    <!-- Grid row-->
+                    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                        <!-- Grid column -->
+                        <div class="col-md-8 col-12 mt-5">
+                            <p style="line-height: 1.7rem">Kalfconsultancy.nl is an up to date resource about minimalistic product management.
+                                Insights from psychology, technology and the daily life of a product manager are used to produce valuable content
+                                for anyone that works in IT or an adjacent field.</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/">Laurens Marnix Kalf</a>
+                </div>
+                <!-- Copyright -->
+            
+            </footer>
+            <!-- Footer -->
             </div>
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    </div> 
+    </div><!-- End of wrapper -->
 
-    <script src="/js/jquery.min.js"></script>
-    <!-- <script src="/js/tether.min.js"></script> -->
-    <script src="/js/bootstrap.min.js"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="/js/menu-items.js"></script>
     <script src="/js/main.js"></script>
-
 
 </body>
 
 </html>
+
