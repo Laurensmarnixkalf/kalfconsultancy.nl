@@ -1,3 +1,16 @@
+// Toggle showing the navbar
+$(document).ready(function () {
+    $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+});
+ 
  // Code to populate the navbar menu
  var introSubMenu = document.getElementById('introductionSubmenu');
  var storSubMenu = document.getElementById('storiesSubMenu');
@@ -28,11 +41,10 @@
  makeList(proSubMenu, menuItemsProcess[0], menuItemsProcess[1]);
  makeList(mapSubMenu, menuItemsStoryMapping[0], menuItemsStoryMapping[1]);
 
- // Toggle showing the navbar
- 
+
 
  // Code to show and hide scroll-to-top button
- // When the user scrolls down 400px from the top of the document, show the button
+ // When the user scrolls down 200px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

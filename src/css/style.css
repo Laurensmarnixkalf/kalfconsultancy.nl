@@ -132,10 +132,15 @@ ul ul a {
   position: relative;
   top: 70px; }
 
-.article-content img {
-  display: block;
-  margin: auto;
-  max-width: 90%; }
+.article-container img {
+  max-width: 350px;
+  padding-left: 20px;
+  padding-bottom: 15px; }
+
+.article-container {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 25px; }
 
 .page-footer {
   background-color: white; }

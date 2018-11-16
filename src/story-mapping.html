@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
 
 <head>
     <title>Kalfconsultancy</title>
@@ -8,30 +8,31 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
-
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <div class="wrapper">
-        <!-- Sidebar -->
-        <!-- Sidebar -->
-        <nav id="sidebar" class="center-text">
-                <div class="sidebar-header">
-                    <a href="http://www.kalfconsultancy.nl/">
-                        <img src='assets/logo-kc-m.jpg'>
-                        <h5>Kalfconsultancy.nl</h5>
-                    </a>
-                </div>
-                <ul class="list-unstyled components" id="mainMenu">
-                    <p><span class="font-italic">Minimalistic product management</span></p>
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="http://www.kalfconsultancy.nl/">
+                    <img src='assets/logo-kc-m.jpg'>
+                    <h5>Kalfconsultancy.nl</h5>
+                </a>
+            </div>
+
+            <ul class="list-unstyled components" id="mainMenu">
                     <li>
                         <a href="about.html">About</a>
                     </li>
@@ -61,70 +62,151 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
-            </nav>
-       <!-- Main content -->
-                
-            <div id="content" class="article">   
-                            <nav class="navbar navbar-light">
-                        <button class="navbar-toggler custom-toggler" type="button" id="sidebarCollapse" class="btn btn-info">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </nav>
-                    <h1>Story mapping</h1>
-                    <p>It all revolves around the simple idea of story telling, something we have been doing for ages already. As
-                        humans we are much more capable of understanding a message when someone is actively telling us the story while
-                        making gestures, creating pictures and/or pointing at images. Story mapping is the way to tell stories in software
-                        development. Before we can get started, make sure you have made some arrangements.</p>
-                    <img src='assets/story-mapping/story-mapping.png' style="max-width: 950px;">
-                    <h6 class="">Personas</h6>
-                    <p>Before you can really get going with the map, it's important to take a step back and think about who you are
-                        actually creating the map for. Doing this little exercise before diving into mapping, helps everyone on the team to
-                        have a clear focus on our target users. The personas don't have to be lengthy documents describing in detail who
-                        our target users are, but need to have at least a name and a short description about their drives and key
-                        characteristics.
-                    </p>
-                    <img src='assets/story-mapping/story-personas.png' style="max-width: 950px;">
-                    <h6 class="">The big picture</h6>
-                    <p>Try to go as wide as possible first. Really draw <mark>the big strokes</mark>. If possible, use post-its of a different color and
-                        write on them in really short sentences what happens in chronological order. Try not to worry about all the
-                        details, we'll get to those soon enough. Just make sure to get to the end of the story.
-                    </p>
-                    <img src='assets/story-mapping/story-bigstrokes.png' style="max-width: 950px;">
-                    <h6 class="">All those details</h6>
-                    <p>Now it's time to go deep. For this phase the <mark>'talk-and-doc'</mark> method can really help. Make sure everyone has enough
-                        post-its, and as you talk through the story, write down all the individual steps. We are really focusing on user
-                        tasks here, they are the building blocks of a story map. Details, alternatives, variations, and exceptions fill in
-                        the body of the map.
-                    </p>
-                    <img src='assets/story-mapping/story-details.png' style="max-width: 950px;">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"Minimize output, maximize outcome and impact."</p>
-                    </blockquote>
-                    <h6 class="">Release, learning and development strategies</h6>
-                    <p>Everything that we come up with are basically assumptions. Assumptions about how we think the real world works.
-                        About what our users will need to solve their problems. The truth is, we don't know what works until we actually
-                        try it. A lot can already be figured out by doing proper user testing with a <a href="the-high-fidelity-prototype.html">high-fidelity prototype</a>. But when we
-                        get to building our product we need to come up with a game-plan on how to build the thing. Try separating your
-                        individual 'releases' into slices. Every slice can have a specific outcome that the slice wants to achieve,
-                        something to learn from.
-                        Write down a name on a post-it for every release that you would like to do and also make a note of what you want to
-                        achieve with the release: the <mark>outcome</mark>.
-                    </p>
-                    <img src='assets/story-mapping/story-releases.png' style="max-width: 950px;">
-                    <hr>
-                    <h6 class="">TL;DR</h6>
-                    <p>Story mapping is a great <mark>technique</mark> to minimize the amount of confusion and maximize shared understanding.</p>
+        </nav>
+
+        <!-- Top Nav bar  -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-light">
+                    <i class="fas fa-align-left"></i>
+                    <span>Menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://www.linkedin.com/in/laurenskalf/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://nl.pinterest.com/laurensmarnix/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+        <!-- Page content -->
+        <div id="content">
+            <div class="article-content">
+                <div class="article-container">
+                    <div class="col-md-12">
+                        <div class="float-right">
+                                <img src='assets/story-mapping/story-mapping.png'>
+                        </div>
+                        <div>
+                            <h1>Story mapping</h1>
+                            <p>It all revolves around the simple idea of story telling, something we have been doing for ages already. As
+                                humans we are much more capable of understanding a message when someone is actively telling us the story while
+                                making gestures, creating pictures and/or pointing at images. Story mapping is the way to tell stories in software
+                                development. Before we can get started, make sure you have made some arrangements.</p>
+                            <h6 class="">Personas</h6>
+                            <p>Before you can really get going with the map, it's important to take a step back and think about who you are
+                                actually creating the map for. Doing this little exercise before diving into mapping, helps everyone on the team to
+                                have a clear focus on our target users. The personas don't have to be lengthy documents describing in detail who
+                                our target users are, but need to have at least a name and a short description about their drives and key
+                                characteristics.
+                            </p>
+                            <img src='assets/story-mapping/story-personas.png' style="max-width: 95%;">
+                            <h6 class="">The big picture</h6>
+                            <p>Try to go as wide as possible first. Really draw <mark>the big strokes</mark>. If possible, use post-its of a different color and
+                                write on them in really short sentences what happens in chronological order. Try not to worry about all the
+                                details, we'll get to those soon enough. Just make sure to get to the end of the story.
+                            </p>
+                            <img src='assets/story-mapping/story-bigstrokes.png' style="max-width: 95%;">
+                            <h6 class="">All those details</h6>
+                            <p>Now it's time to go deep. For this phase the <mark>'talk-and-doc'</mark> method can really help. Make sure everyone has enough
+                                post-its, and as you talk through the story, write down all the individual steps. We are really focusing on user
+                                tasks here, they are the building blocks of a story map. Details, alternatives, variations, and exceptions fill in
+                                the body of the map.
+                            </p>
+                            <img src='assets/story-mapping/story-details.png' style="max-width: 95%;">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"Minimize output, maximize outcome and impact."</p>
+                            </blockquote>
+                            <h6 class="">Release, learning and development strategies</h6>
+                            <p>Everything that we come up with are basically assumptions. Assumptions about how we think the real world works.
+                                About what our users will need to solve their problems. The truth is, we don't know what works until we actually
+                                try it. A lot can already be figured out by doing proper user testing with a <a href="the-high-fidelity-prototype.html">high-fidelity prototype</a>. But when we
+                                get to building our product we need to come up with a game-plan on how to build the thing. Try separating your
+                                individual 'releases' into slices. Every slice can have a specific outcome that the slice wants to achieve,
+                                something to learn from.
+                                Write down a name on a post-it for every release that you would like to do and also make a note of what you want to
+                                achieve with the release: the <mark>outcome</mark>.
+                            </p>
+                            <img src='assets/story-mapping/story-releases.png' style="max-width: 95%;">
+                            <hr>
+                            <h6 class="">TL;DR</h6>
+                            <p>Story mapping is a great <mark>technique</mark> to minimize the amount of confusion and maximize shared understanding.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small">
+                <!-- Footer Links -->
+                <div class="container">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                        <!-- Grid column -->
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="about.html">About</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="resources.html">Resources</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="contact.html">Contact</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                    <hr class="rgba-white-light" style="margin: 0 15%;">
+                    <!-- Grid row-->
+                    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                        <!-- Grid column -->
+                        <div class="col-md-8 col-12 mt-5">
+                            <p style="line-height: 1.7rem">Kalfconsultancy.nl is an up to date resource about minimalistic product management.
+                                Insights from psychology, technology and the daily life of a product manager are used to produce valuable content
+                                for anyone that works in IT or an adjacent field.</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </div>
+                <!-- Footer Links -->
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/">Laurens Marnix Kalf</a>
+                </div>
+                <!-- Copyright -->
+            
+            </footer>
+            <!-- Footer -->
             </div>
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    </div> 
+    </div><!-- End of wrapper -->
 
-    <script src="/js/jquery.min.js"></script>
-    <!-- <script src="/js/tether.min.js"></script> -->
-    <script src="/js/bootstrap.min.js"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="/js/menu-items.js"></script>
     <script src="/js/main.js"></script>
-
 
 </body>
 
 </html>
+
+
+
