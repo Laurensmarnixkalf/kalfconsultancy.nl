@@ -2,157 +2,125 @@
 $font-stack: 'Montserrat', sans-serif;
 $bg-color: white;
 $link-color: grey;
-$darkest-color: #2d3436;
+$darkest-color: #343a40;
 $darker-color: #636e72;
 $light-color: #b2bec3;
-$lighter-color: #dfe6e9;
+$lighter-color: #f8f9fa;
 $highlight-color: #fcf8e3;
 $link-hover-color: black;
 $break-largescreen: 768px;
 
-body, html {
-    font: 100% $font-stack;
-    background: $bg-color;
+
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: $lighter-color;
 }
 
 p {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
+    color: #999;
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
 }
 
-.lead {
-    padding: 40px 0px 40px 0px;
-}
-
-.custom-toggler.navbar-toggler {
-    border-style: none;
-} 
-
-.page-content-wrapper {
-    width: 100%;
-}
-
-// Navbar on top
 .navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    padding: 0;
-    margin: 0;
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
     width: 100%;
-    background-color: white;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
 }
 
-.navbar-toggler {
-    margin: 0;
-    padding: 0;
-}
-
-.custom-toggler {
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-// Content area for all pages
-#content {
-    padding-top: 50px;
-    width: 70%;
-    height: 100%;
-    margin:0 auto;
-}
-
-.article {
-        padding-top: 70px;
-    p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    ul {
-        margin: 30px;
-    }
-    img {
-        display: block;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        max-width: 350px;
-    }
-} 
-
-// All sidebar related
-#sidebar {
-    position: relative;
-    background: $bg-color;
-    color: $darker-color;
-    text-align: center;
-    transition: all 0.3s;
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 100vh;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    img {
-        max-width: 80px;
-    }
-    h5 {
-        color: black;
-    }  
-    ul p {
-        color: $darker-color;
-        padding: 10px;
-    }  
-    ul.components {
-        padding: 20px 0;
-        border-bottom: none;
-    }
-    ul li a {
-        padding: 10px;
-        font-size: 1.1em;
-        display: block;
-    }
-    ul li a:hover {
-        color: $darkest-color;
-        background: #fff;
-    }
-    ul li.active > a, a[aria-expanded="true"] {
-        color: black;
-        background: $bg-color;
-    }
-}
-
-#sidebar:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: $bg-color;
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: $bg-color;
-}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
 
 .wrapper {
     display: flex;
     width: 100%;
-    align-items: stretch;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: white;
+    color: $darkest-color;
+    transition: all 0.3s;
 }
 
 #sidebar.active {
-    margin-left: -255px;
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.sidebar-header img {
+    width: 100px;
+    display:block;
+    margin:auto;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: $darkest-color;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px 10px 10px 30px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: $darker-color;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: black;
+    background: $lighter-color;
 }
 
 a[data-toggle="collapse"] {
@@ -167,55 +135,64 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
-// Scroll to top button
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: $light-color;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-    opacity: 0.8;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: $lighter-color;
+}
 
-// Mobile 
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+.card {
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.article-content {
+    position: relative;
+    top: 70px;
+}
+
+.article-content img {
+    display:block;
+    margin:auto;
+    max-width: 90%;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
 @media (max-width: 768px) {
-    #content {
-        width: 95%;
-    }
     #sidebar {
-        margin-left: -255px;
-        box-shadow: none;
+        margin-left: -250px;
     }
     #sidebar.active {
         margin-left: 0;
     }
-    .article {
-        img {
-            width: 90%;
-        }
-    }
-}
-
-// Big screens
-@media (min-width: 1200px) {
     #content {
-        width: 60%;
-        height: 100%;
-        margin:0 auto;
+        width: 100%;
     }
-    .navbar {
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
         display: none;
     }
 }

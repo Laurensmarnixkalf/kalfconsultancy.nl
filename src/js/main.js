@@ -29,14 +29,7 @@
  makeList(mapSubMenu, menuItemsStoryMapping[0], menuItemsStoryMapping[1]);
 
  // Toggle showing the navbar
- $(document).ready(function () {
-
-     $('#sidebarCollapse').on('click', function () {
-         $('#sidebar').toggleClass('active');
-     });
-
- });
-
+ 
 
  // Code to show and hide scroll-to-top button
  // When the user scrolls down 400px from the top of the document, show the button
